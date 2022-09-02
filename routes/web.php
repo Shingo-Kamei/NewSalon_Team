@@ -19,4 +19,6 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\UserController::class, 'index'])->name('home');
+
+Route::get('/appoint', [App\Http\Controllers\UserController::class, 'create'])->name('home');
