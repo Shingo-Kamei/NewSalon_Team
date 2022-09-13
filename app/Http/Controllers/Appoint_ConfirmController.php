@@ -3,43 +3,28 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Appoint;
 
-class UserController extends Controller
+class Appoint_ConfirmController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('appoints.create');
+
+        // return view('appoint_confirms.index');
     }
 
     /**
      * Show the form for creating a new resource.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function create(Request $request)
+    public function create()
     {
-
- 
-        $name = $request->name;
-        $email = $request->email;
-        $tel = $request->tel;
-        $password = $request->password;
-
-        $input_data = [
-            'name' => $name,
-            'email' => $email,
-            'tel' => $tel,
-            'password' => $password,
-        ];
-
-        return view('appoints.confirms',compact('input_data'));
+        //
     }
 
     /**
@@ -48,9 +33,9 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function complete(Request $request)
+    public function store(Request $request)
     {
-        return view('appoints/complete');
+        //
     }
 
     /**
