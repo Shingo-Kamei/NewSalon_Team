@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Calendar\CalendarView;
 use App\Models\Appoint;
 
 class UserController extends Controller
@@ -59,10 +60,14 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        //
-    }
+    // public function show()
+    // {
+    //     $calendar = new CalendarView(time());
+
+    //     return view('appoints.calendar',[
+    //         "calendar" => $calendar
+    //     ]); 
+    // }
 
     /**
      * Show the form for editing the specified resource.

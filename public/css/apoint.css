@@ -1,0 +1,77 @@
+.apointment {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.date{
+    text-align: center;
+    padding: 30px;
+}
+
+.name{
+    padding-right: 50px;
+    text-align: center;
+}
+
+.email{
+    padding-right: 100px;
+    text-align: center;
+}
+
+.tel{
+    padding-right: 80px;
+    text-align: center;
+}
+
+.password{
+    padding-right: 80px;
+    text-align: center;
+}
+
+.btn{
+    text-align: center;
+}
+
+/* 予約画面 */
+.confirm-title{
+    text-align: center;
+    margin-top: 80px;
+    padding-bottom: 80px;
+}
+
+.confirm-name{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.confirm-email{
+    text-align: center;
+    padding-left: 28px;
+    padding-bottom: 15px;
+}
+
+.confirm-tel{
+    text-align: center;
+    padding-left: 30px;
+    padding-bottom: 15px;
+}
+
+.confirm-password{
+    text-align: center;
+    padding-left: 35px;
+    
+}
+.confirm-btn{
+    text-align: center;
+}
+
+/* 予約完了画面 */
+h3{
+    text-align: center;
+    margin-top: 80px;
+    
+}
+.complete-back{
+    text-align: center;
+    margin-top: 200px;
+}
