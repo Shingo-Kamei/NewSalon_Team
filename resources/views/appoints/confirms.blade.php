@@ -14,8 +14,10 @@
 <body>
     <h1 class="confirm-title">予約確認画面</h1>
 
-    <form class="row g-3" method="post" action="complete">
+    <form class="row g-3" method="post" action="/complete">
         @csrf
+
+        
 
         <div class="confirm-name">
             <label>名前:</label>

@@ -51,6 +51,14 @@ class UserController extends Controller
      */
     public function complete(Request $request)
     {
+
+        $appoint = new Appoint;
+        $appoint->name = $request->name;
+        $appoint->email = $request->email;
+        $appoint->tel = $request->tel;
+        $appoint->password = $request->password;
+
+        $appoint->save();
         return view('appoints/complete');
     }
 
