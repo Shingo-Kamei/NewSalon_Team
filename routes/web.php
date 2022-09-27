@@ -1,7 +1,8 @@
 <?php
-
+ 
+use App\Http\Controllers\SalonController;
 use Illuminate\Support\Facades\Route;
-
+ 
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,11 +13,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+ //一覧画面表示用
+Route::get('/', [SalonController::class,'index']);
+ // 本の登録画面の表示
+Route::get('/create', [SalonController::class, 'create'])->name('salon.create');  
+ // 本の登録処理
+Route::post('/store', [SalonController::class, 'store'])->name('salon.store');
