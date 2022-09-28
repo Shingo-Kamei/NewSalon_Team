@@ -25,27 +25,27 @@
   @csrf
 
   <p class="date">
-    <input type="date" name="date" id="form-date">
+    <input class="appoint-date" type="date" name="date" id="form-date">
   </p>
 
   <p class="name">
-      <label for="form-name">名前</label>
-      <input type="text" name="name" id="form-name" required>
+      <label class="appointment-name" for="form-name">名前<span class="badge bg-danger">必須</span></label>
+      <input class="appoint-name" type="text" name="name" id="form-name" required>
   </p>
 
   <p class="email">
-      <label for="form-email">メールアドレス</label>
-      <input type="email" name="email" id="form-email" required>
+      <label class="appointment-email" for="form-email">メールアドレス<span class="badge bg-danger">必須</span></label>
+      <input class="appoint-email" type="email" name="email" id="form-email" required>
   </p>
 
   <p class="tel">
-      <label for="form-tel">電話番号</label>
-      <input type="tel" name="tel" id="form-tel" required>
+      <label class="appointment-tel" for="form-tel">電話番号<span class="badge bg-danger">必須</span></label>
+      <input class="appoint-tel" type="tel" name="tel" id="form-tel" required>
   </p>
   
   <p class="password">
-      <label for="form-password">パスワード</label>
-      <input type="password" name="password" id="form-password" required>
+      <label class="appointment-password" for="form-password">パスワード<span class="badge bg-danger">必須</span></label>
+      <input class="appoint-password" type="password" name="password" id="form-password" required>
   </p>
 
   <div class="btn" >

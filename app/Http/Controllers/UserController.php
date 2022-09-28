@@ -66,16 +66,20 @@ class UserController extends Controller
      * Display the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return view
      */
-    // public function show()
-    // {
-    //     $calendar = new CalendarView(time());
+    public function show($id)
+    {
+        // $calendar = new CalendarView(time());
 
-    //     return view('appoints.calendar',[
-    //         "calendar" => $calendar
-    //     ]); 
-    // }
+        // return view('appoints.calendar',[
+        //     "calendar" => $calendar
+        // ]); 
+
+            $appoint = Appoint::find($id);
+            return view('appoints/edit', compact('appoint'));
+
+    }
 
     /**
      * Show the form for editing the specified resource.

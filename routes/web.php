@@ -30,3 +30,4 @@ Route::post('/appoint', [App\Http\Controllers\UserController::class, 'create'])-
 Route::get('/home', [App\Http\Controllers\UserController::class, 'index'])->name('home');
 Route::post('/complete', [App\Http\Controllers\UserController::class, 'complete'])->name('complete');
 // Route::get('/calendar', [App\Http\Controllers\UserController::class, 'show'])->name('calendar');
+Route::get('/edit/{id}', [App\Http\Controllers\UserController::class, 'show'])->name('show');
