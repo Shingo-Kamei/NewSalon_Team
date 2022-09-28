@@ -121,60 +121,85 @@ h3{
     padding-bottom: 10px; 
     text-shadow:1px 1px 0 #fff, 2px 2px 0 #000;
 }
+.edit-picture-wrrper{
+    text-align: center;
+}
 .edit_picture{
-
-    width: 100%;
-    padding-bottom: 100px;
+    margin: 0, auto;
+    /* margin-left: 420px; */
+    max-width: 100%;
     padding: 100px;
     border-radius: 30%;   
 }
 .edit-name{
-    padding-left: 350px;
     letter-spacing: 0.1em;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+}
+.salon_name{
+    text-align: center;
+    font-weight: bold;
 }
 .edit-time{
-    padding-left: 350px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     letter-spacing: 0.1em;
-
+}
+.salon_time{
+    text-align: center;
+    font-weight: bold;
 }
 .edit-holiday{
-    padding-left: 350px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     letter-spacing: 0.1em;
-
+}
+.salon_holiday{
+    text-align: center;
+    font-weight: bold;
 }
 .edit-price{
-    padding-left: 350px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     letter-spacing: 0.1em;
-
+}
+.salon_price{
+    text-align: center;
+    font-weight: bold;
 }
 .edit-address{
-    padding-left: 350px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     letter-spacing: 0.1em;
-
+}
+.salon_address{
+    text-align: center;
+    font-weight: bold;
 }
 .edit-tel{
-    padding-left: 350px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     letter-spacing: 0.1em;
-
+}
+.salon_tel{
+    text-align: center;
+    font-weight: bold;
 }
 .edit-seat{
-    padding-left: 350px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     letter-spacing: 0.1em;
+}
+.salon_seat{
+    text-align: center;
+    font-weight: bold;
 }
 .edit-crew{
-    padding-left: 350px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     letter-spacing: 0.1em;
 }
+.salon_crew{
+    text-align: center;
+    font-weight: bold;
+}
 .edit-parking{
-    padding-left: 350px;
     margin-bottom: 100px;
     letter-spacing: 0.1em;
+}
+.salon_parking{
+    text-align: center;
+    font-weight: bold;
 }
