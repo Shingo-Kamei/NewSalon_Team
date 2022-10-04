@@ -336,7 +336,7 @@ th {
   border-width: 0;
   padding-left: 50px;
   padding-right: 50px;
-  width: 5%;
+  
 }
 
 label {
@@ -9599,8 +9599,8 @@ textarea.form-control-lg {
   .my-lg-0 {
     margin-top: 0 !important;
     margin-bottom: 50px !important;
-    padding-left: 10px;
-    padding-right: 1000px;
+    padding-left: 530px;
+    padding-right: 500px;
     padding-top: 5px;
   }
   .my-lg-1 {

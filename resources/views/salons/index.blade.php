@@ -5,11 +5,13 @@
 <h1>床屋さん検索さん</h1>
 <h4>一覧</h4>
 
+
 <form class="form-inline my-2 my-lg-0 ml-2">
-      <div class="form-group">
+<div class="form-group">
       <input type="search" class="form-control mr-sm-2" name="search"  value="{{request('search')}}" placeholder="キーワードを入力" aria-label="検索...">
       </div>
       <input type="submit" value="検索" class="btn btn-info">
+      
   </form>
 
 
@@ -41,7 +43,7 @@ table tr:nth-child(odd) td {
     <td>{{ $salon->name }}</td>
     <td>{{ $salon->address}}</td>
     <td>{{ $salon->features}}</td>
-    <td><a href=""class="btn btn-primary">予約</a></td>
+    <td><input type="submit" value="詳細" class="btn btn-info"></td>
 </tr>
 
 
