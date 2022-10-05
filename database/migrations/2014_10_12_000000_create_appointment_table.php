@@ -13,16 +13,14 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
-            $table->integer('admin_id', true);
-            $table->interger('shop_id', );
-            $table->string('detail', 1000)->unique();
-            $table->string('email', 254)->unique();
-            $table->string('password', 24);
-            $table->datetime('create_at', );
-            $table->datetime('updated_at', );
-
-
+        Schema::create('appointments', function (Blueprint $table) {
+            $table->id();
+            $table->int('shop_id');
+            $table->string('name', 254);
+            $table->string('email', 254);
+            $table->string('tel', 13);
+            $table->datetime('create_at');
+            $table->datetime('updated_at');
         });
     }
 
