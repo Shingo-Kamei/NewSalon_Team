@@ -19,4 +19,13 @@ class SalonController extends Controller
     {
         return view('salon.create');
     }
+
+    public function showPage()
+    {
+        return view('reserve.blade.php');
+    }
+
+
 }
+
+

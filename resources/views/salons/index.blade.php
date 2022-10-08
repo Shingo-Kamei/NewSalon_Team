@@ -5,14 +5,12 @@
 <h1>床屋さん検索さん</h1>
 <h4>一覧</h4>
 
+<form action="" method="post">
+	<input type="search" name="q" value="" placeholder="キーワード"><input type="submit" name="btn_search" value="検索" class="btn btn-info" >
+</form>
 
-<form class="form-inline my-2 my-lg-0 ml-2">
-<div class="form-group">
-      <input type="search" class="form-control mr-sm-2" name="search"  value="{{request('search')}}" placeholder="キーワードを入力" aria-label="検索...">
-      </div>
-      <input type="submit" value="検索" class="btn btn-info">
       
-  </form>
+
 
 
 
