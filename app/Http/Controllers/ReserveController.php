@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Salon;
 use Illuminate\Http\Request;
 
-class SalonController extends Controller
+class ReserveController extends Controller
 {
     public function index()
     {
@@ -19,10 +18,3 @@ class SalonController extends Controller
     {
         return view('salon.create');
     }
-
-   
-
-
-}
-
-
