@@ -120,6 +120,7 @@ h3{
     margin-top: 50px;
     padding-bottom: 10px; 
     text-shadow:1px 1px 0 #fff, 2px 2px 0 #000;
+    font-size: xxx-large;
 }
 .edit-picture-wrrper{
     text-align: center;
@@ -131,75 +132,107 @@ h3{
     padding: 100px;
     border-radius: 30%;   
 }
+.salon_data{
+    width: fit-content;
+    margin: 0 auto;
+}
 .edit-name{
     letter-spacing: 0.1em;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    margin-right: 50px;
+}
+.edit_subname{
+    margin-right: 30px;
 }
 .salon_name{
-    text-align: center;
+    /* text-align: center; */
     font-weight: bold;
 }
 .edit-time{
     margin-bottom: 20px;
     letter-spacing: 0.1em;
+    margin-left: 70px;
+    margin-right: 40px;
 }
 .salon_time{
-    text-align: center;
+    /* text-align: center; */
     font-weight: bold;
 }
 .edit-holiday{
     margin-bottom: 20px;
     letter-spacing: 0.1em;
+    margin-left: 70px;
+    margin-right: 60px;
 }
 .salon_holiday{
-    text-align: center;
+    /* text-align: center; */
     font-weight: bold;
 }
 .edit-price{
     margin-bottom: 20px;
     letter-spacing: 0.1em;
+    margin-left: 70px;
+    margin-right: 80px;
 }
 .salon_price{
-    text-align: center;
+    /* text-align: center; */
     font-weight: bold;
 }
 .edit-address{
     margin-bottom: 20px;
     letter-spacing: 0.1em;
+    margin-left: 70px;
+    margin-right: 80px;
 }
 .salon_address{
-    text-align: center;
+    /* text-align: center; */
     font-weight: bold;
 }
 .edit-tel{
     margin-bottom: 20px;
     letter-spacing: 0.1em;
+    margin-left: 70px;
+    margin-right: 45px;
 }
 .salon_tel{
-    text-align: center;
+    /* text-align: center; */
     font-weight: bold;
 }
 .edit-seat{
     margin-bottom: 20px;
     letter-spacing: 0.1em;
+    margin-left: 70px;
+    margin-right: 65px;
 }
 .salon_seat{
-    text-align: center;
+    /* text-align: center; */
     font-weight: bold;
 }
 .edit-crew{
     margin-bottom: 20px;
     letter-spacing: 0.1em;
+    margin-left: 70px;
+    margin-right: 30px;
 }
 .salon_crew{
-    text-align: center;
+    /* text-align: center; */
     font-weight: bold;
 }
 .edit-parking{
     margin-bottom: 100px;
     letter-spacing: 0.1em;
+    margin-left: 70px;
+    margin-right: 65px;
 }
 .salon_parking{
-    text-align: center;
+    /* text-align: center; */
     font-weight: bold;
+}
+.edit-btn{
+    text-align: center;
+    padding-bottom: 50px;
+    font-weight: bold;
+    font-size: larger;
+    /* font-size: x-large; */
 }
