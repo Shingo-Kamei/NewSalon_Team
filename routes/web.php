@@ -20,4 +20,6 @@ Route::get('/create', [SalonController::class, 'create'])->name('salon.create');
  // 本の登録処理
 Route::post('/store', [SalonController::class, 'store'])->name('salon.store');
  //予約画面の表示
-Route::get('/reserve',[SalonController::class, 'showPage']);
+Route::get('/salons',[App\Http\Controllers\SalonController::class,'index'])->name('salons');
+    
+
