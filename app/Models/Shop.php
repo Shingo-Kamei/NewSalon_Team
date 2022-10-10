@@ -3,7 +3,7 @@
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
-class Appoint extends Model
+class Shop extends Model
 {
-    protected $table = 'appoints';
+    protected $table = 'shops';
 }
