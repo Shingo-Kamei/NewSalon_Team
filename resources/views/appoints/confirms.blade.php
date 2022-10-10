@@ -7,31 +7,35 @@
 
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="{{ asset('css/apoint.css') }}" rel="stylesheet">
 
 <title>予約確認画面</title>
 </head>
 <body>
-    <h1>予約確認画面</h1>
+    <h1 class="confirm-title">予約確認画面</h1>
 
-    <form class="row g-3" method="post" action="complete">
+    <form class="row g-3" method="post" action="/complete">
         @csrf
-        <div>
+
+        
+
+        <div class="confirm-name">
             <label>名前:</label>
             <span>{{$input_data['name']}}</span>
         </div>
 
 
-        <div>
+        <div class="confirm-email">
             <label>メールアドレス:</label>
             <span>{{$input_data['email']}}</span>
         </div>
 
-        <div>
+        <div class="confirm-tel">
             <label>電話番号:</label>
             <span>{{$input_data['tel']}}</span>
         </div>
 
-        <div>
+        <div class="confirm-password">
             <label>パスワード:</label>
             <span>{{$input_data['password']}}</span>
         </div>
@@ -41,6 +45,8 @@
             <input type="hidden" value="{{ $input_data['email'] }}"name="email">
             <input type="hidden" value="{{ $input_data['tel'] }}"name="tel">
             <input type="hidden" value="{{ $input_data['password'] }}"name="password">
+        </div>
+        <div class="confirm-btn">
             <button type="submit" class="btn btn-primary">予約</button>
         </div>
     </form>
