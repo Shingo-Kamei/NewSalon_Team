@@ -13,8 +13,8 @@ class AddShopTable extends Migration
      */
     public function up()
     {
-        Schema::table('shops', function (Blueprint $table) {
-            $table->date('appoint_at')->after('parking')->comment('予約日');
+        Schema::table('appoints', function (Blueprint $table) {
+            $table->date('appoint_at')->after('tel')->comment('予約日');
         });
     }
 
@@ -25,7 +25,7 @@ class AddShopTable extends Migration
      */
     public function down()
     {
-        Schema::table('shops', function (Blueprint $table) {
+        Schema::table('appoints', function (Blueprint $table) {
             $table->dropColumn('appoint_at');
         });
     }

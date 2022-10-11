@@ -41,7 +41,18 @@ class ShopController extends Controller
 
     public function store(Request $request)
     {
-        var_dump($request);
+        $shop = new Shop();
+        $shop->shop_name = $request->shop_name;
+        $shop->address = $request->shop_address;
+        $shop->open_hour = $request->shop_open_hour;
+        $shop->close_day = $request->shop_close_day;
+        $shop->tel = $request->shop_tel;
+        $shop->seat_num = $request->shop_seat_num;
+        $shop->staff_num = $request->shop_staff_num;
+        $shop->detail = $request->shop_detail;
+        $shop->parking = $request->shop_parking;
+        $shop->save();
+
         redirect()->to('admin/shop/create_complete');
     }
 
