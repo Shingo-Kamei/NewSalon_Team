@@ -25,6 +25,8 @@ class AddShopTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('shops');
+        Schema::table('shops', function (Blueprint $table) {
+            $table->dropColumn('appoint_at');
+        });
     }
 }
