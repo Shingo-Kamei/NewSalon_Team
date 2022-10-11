@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-header">管理画面 店舗情報登録</div>
                 <div class="card-body">
-                    <form action="/admin/shop/store" method="post">
+                    <form action="/admin/shop/create" method="post">
                         @csrf
                         <div class="form-group">
                             <label for="shop_name">店舗名</label>

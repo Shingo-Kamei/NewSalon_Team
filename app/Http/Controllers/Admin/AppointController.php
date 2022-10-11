@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Appoint;
-use Illuminate\Http\Request;
 
 class AppointController extends Controller
 {

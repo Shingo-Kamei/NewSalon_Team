@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Shop;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class ShopController extends Controller
 {
@@ -51,24 +52,27 @@ class ShopController extends Controller
         $shop->staff_num = $request->shop_staff_num;
         $shop->detail = $request->shop_detail;
         $shop->parking = $request->shop_parking;
+        $shop->created_at = Carbon::now();
+        $shop->updated_at = Carbon::now();
         $shop->save();
-
-        redirect()->to('admin/shop/create_complete');
-    }
-
-    public function create_complete()
-    {
         return view('admin/shop/create_complete');
     }
 
-    public function update(Request $request)
+    public function update($id, Request $request)
     {
-        redirect()->to('admin/shop/update_complete');
-    }
-
-    public function update_complete()
-    {
+        $shop = Shop::find($id);
+        $shop->shop_name = $request->shop_name;
+        $shop->address = $request->shop_address;
+        $shop->open_hour = $request->shop_open_hour;
+        $shop->close_day = $request->shop_close_day;
+        $shop->tel = $request->shop_tel;
+        $shop->seat_num = $request->shop_seat_num;
+        $shop->staff_num = $request->shop_staff_num;
+        $shop->detail = $request->shop_detail;
+        $shop->parking = $request->shop_parking;
+        $shop->created_at = Carbon::now();
+        $shop->updated_at = Carbon::now();
+        $shop->save();
         return view('admin/shop/update_complete');
     }
-
 }

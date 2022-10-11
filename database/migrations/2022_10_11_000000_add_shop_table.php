@@ -16,6 +16,10 @@ class AddShopTable extends Migration
         Schema::table('appoints', function (Blueprint $table) {
             $table->date('appoint_at')->after('tel')->comment('予約日');
         });
+        Schema::table('shops', function (Blueprint $table) {
+            $table->dropColumn('create_at');
+            $table->datetime('created_at');
+        });
     }
 
     /**
