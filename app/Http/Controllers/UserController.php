@@ -27,13 +27,14 @@ class UserController extends Controller
     public function create(Request $request)
     {
 
- 
+        $date = $request->date;
         $name = $request->name;
         $email = $request->email;
         $tel = $request->tel;
         $password = $request->password;
 
         $input_data = [
+            'date' => $date,
             'name' => $name,
             'email' => $email,
             'tel' => $tel,
@@ -53,6 +54,7 @@ class UserController extends Controller
     {
 
         $appoint = new Appoint;
+        $appoint->date = $request->date;
         $appoint->name = $request->name;
         $appoint->email = $request->email;
         $appoint->tel = $request->tel;

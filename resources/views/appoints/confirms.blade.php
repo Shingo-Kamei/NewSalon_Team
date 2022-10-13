@@ -16,6 +16,10 @@
 
     <form class="row g-3" method="post" action="/complete">
         @csrf       
+        <div class="confirm-date">
+            <label>予約日:</label>
+            <span>{{$input_data['date']}}</span>
+        </div>
 
         <div class="confirm-name">
             <label>名前:</label>
@@ -33,16 +37,11 @@
             <span>{{$input_data['tel']}}</span>
         </div>
 
-        <div class="confirm-password">
-            <label>パスワード:</label>
-            <span>{{$input_data['password']}}</span>
-        </div>
-
         <div>
+            <input type="hidden" value="{{ $input_data['date'] }}" name="date">
             <input type="hidden" value="{{ $input_data['name'] }}"name="name">
             <input type="hidden" value="{{ $input_data['email'] }}"name="email">
             <input type="hidden" value="{{ $input_data['tel'] }}"name="tel">
-            <input type="hidden" value="{{ $input_data['password'] }}"name="password">
         </div>
         <div class="confirm-btn">
             <button type="submit" class="btn btn-primary">予約</button>

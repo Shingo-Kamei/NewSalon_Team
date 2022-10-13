@@ -43,11 +43,6 @@
       <input class="appoint-tel" type="tel" name="tel" id="form-tel" required>
   </p>
   
-  <p class="password">
-      <label class="appointment-password" for="form-password">パスワード<span class="badge bg-danger">必須</span></label>
-      <input class="appoint-password" type="password" name="password" id="form-password" required>
-  </p>
-
   <div class="btn" >
     <button type="submit" class="btn btn-primary">確認</button>
   </div>
