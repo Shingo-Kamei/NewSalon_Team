@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Appoint;
-use Illuminate\Http\Request;
+use App\Models\Shop;
 
 class AppointController extends Controller
 {
@@ -25,6 +25,7 @@ class AppointController extends Controller
     public function index()
     {
         $appoints = Appoint::get();
-        return view('admin/appoint/index')->with('appoints', $appoints);
+        $shops = Shop::pluck("shop_name", "id")->toArray();
+        return view('admin/appoint/index')->with(['appoints'=> $appoints, 'shops' => $shops]);
     }
 }
