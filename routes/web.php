@@ -51,3 +51,5 @@ Route::get('/admin/shop/edit/{id}', [App\Http\Controllers\Admin\ShopController::
 Route::put('/admin/shop/{id}', [App\Http\Controllers\Admin\ShopController::class, 'update']);
 Route::get('/admin/shop/update_complete', [App\Http\Controllers\Admin\ShopController::class, 'update_complete']);
 Route::delete('/admin/shop/{id}', [App\Http\Controllers\Admin\ShopController::class, 'delete']);
+
+Route::get('/reserve',[App\Http\Controllers\ReserveController::class,'index'])->name('reserve');

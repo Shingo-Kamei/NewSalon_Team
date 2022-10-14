@@ -18,3 +18,4 @@ class ReserveController extends Controller
     {
         return view('salon.create');
     }
+}

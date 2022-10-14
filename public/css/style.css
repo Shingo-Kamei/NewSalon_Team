@@ -94,7 +94,7 @@ a {
 ****/
 .side .side-inner{
     position: sticky;
-    height: 100vh;
+    height: 30vh;
     top: 0px;
     padding-top: 20px;
     text-align: center;
