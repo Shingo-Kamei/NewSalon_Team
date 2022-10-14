@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Calendar\CalendarView;
 use App\Models\Appoint;
 
 class UserController extends Controller
@@ -50,6 +51,14 @@ class UserController extends Controller
      */
     public function complete(Request $request)
     {
+
+        $appoint = new Appoint;
+        $appoint->name = $request->name;
+        $appoint->email = $request->email;
+        $appoint->tel = $request->tel;
+        $appoint->password = $request->password;
+
+        $appoint->save();
         return view('appoints/complete');
     }
 
@@ -57,11 +66,19 @@ class UserController extends Controller
      * Display the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return view
      */
     public function show($id)
     {
-        //
+        // $calendar = new CalendarView(time());
+
+        // return view('appoints.calendar',[
+        //     "calendar" => $calendar
+        // ]); 
+
+            $appoint = Appoint::find($id);
+            return view('appoints/edit', compact('appoint'));
+
     }
 
     /**

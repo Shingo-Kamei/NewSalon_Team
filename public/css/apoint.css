@@ -1,0 +1,205 @@
+/* 予約画面 */
+.apointment {
+    text-align: center;
+    margin-top: 120px;
+}
+.date{
+    text-align: center;
+    padding: 30px;
+}
+.appoint-date{
+    cursor:pointer;
+    border-radius: 5px;
+}
+.name{
+    padding-right: 50px;
+    text-align: center;
+}
+.appointment-name{
+    font-weight: bold;
+}
+.appoint-name{
+    cursor:pointer;
+    border-radius: 5px;
+}
+.email{
+    padding-right: 100px;
+    text-align: center;
+}
+.appointment-email{
+    font-weight: bold;
+}
+.appoint-email{
+    cursor:pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.tel{
+    padding-right: 80px;
+    text-align: center;
+}
+.appointment-tel{
+    font-weight: bold;
+}
+.appoint-tel{
+    cursor:pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.password{
+    padding-right: 80px;
+    text-align: center;
+}
+.appointment-password{
+    font-weight: bold;
+}
+.appoint-password{
+    cursor:pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.btn{
+    text-align: center;
+    cursor:pointer;
+}
+
+/* 予約確認画面 */
+.confirm-title{
+    text-align: center;
+    margin-top: 80px;
+    padding-bottom: 80px;
+    
+}
+
+.confirm-name{
+    text-align: center;
+    padding-bottom: 15px;
+    letter-spacing: 0.1em;
+}
+
+.confirm-email{
+    text-align: center;
+    padding-left: 28px;
+    padding-bottom: 15px;
+    letter-spacing: 0.1em;
+}
+
+.confirm-tel{
+    text-align: center;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    letter-spacing: 0.1em;
+}
+
+.confirm-password{
+    text-align: center;
+    padding-left: 35px;
+    letter-spacing: 0.1em;
+}
+.confirm-btn{
+    text-align: center;
+}
+
+/* 予約完了画面 */
+h3{
+    text-align: center;
+    margin-top: 80px;
+    
+}
+.complete-back{
+    text-align: center;
+    margin-top: 200px;
+}
+
+/* 詳細画面 */
+.main{
+    width: 100%;
+}
+.edit_title{
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 10px; 
+    text-shadow:1px 1px 0 #fff, 2px 2px 0 #000;
+}
+.edit-picture-wrrper{
+    text-align: center;
+}
+.edit_picture{
+    margin: 0, auto;
+    /* margin-left: 420px; */
+    max-width: 100%;
+    padding: 100px;
+    border-radius: 30%;   
+}
+.edit-name{
+    letter-spacing: 0.1em;
+    margin-bottom: 30px;
+}
+.salon_name{
+    text-align: center;
+    font-weight: bold;
+}
+.edit-time{
+    margin-bottom: 20px;
+    letter-spacing: 0.1em;
+}
+.salon_time{
+    text-align: center;
+    font-weight: bold;
+}
+.edit-holiday{
+    margin-bottom: 20px;
+    letter-spacing: 0.1em;
+}
+.salon_holiday{
+    text-align: center;
+    font-weight: bold;
+}
+.edit-price{
+    margin-bottom: 20px;
+    letter-spacing: 0.1em;
+}
+.salon_price{
+    text-align: center;
+    font-weight: bold;
+}
+.edit-address{
+    margin-bottom: 20px;
+    letter-spacing: 0.1em;
+}
+.salon_address{
+    text-align: center;
+    font-weight: bold;
+}
+.edit-tel{
+    margin-bottom: 20px;
+    letter-spacing: 0.1em;
+}
+.salon_tel{
+    text-align: center;
+    font-weight: bold;
+}
+.edit-seat{
+    margin-bottom: 20px;
+    letter-spacing: 0.1em;
+}
+.salon_seat{
+    text-align: center;
+    font-weight: bold;
+}
+.edit-crew{
+    margin-bottom: 20px;
+    letter-spacing: 0.1em;
+}
+.salon_crew{
+    text-align: center;
+    font-weight: bold;
+}
+.edit-parking{
+    margin-bottom: 100px;
+    letter-spacing: 0.1em;
+}
+.salon_parking{
+    text-align: center;
+    font-weight: bold;
+}
