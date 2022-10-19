@@ -17,7 +17,7 @@ class SalonController extends Controller
 
      public function create(Request $request)
     {
-        return view('salon.create');
+        return view('shop.create');
     }
 
    
