@@ -215,6 +215,15 @@ h3{
     /* text-align: center; */
     font-weight: bold;
 }
+.salon_shopedit{
+    font-weight: bold;
+}
+.shop-edit{
+    margin-bottom: 20px;
+    letter-spacing: 0.1em;
+    margin-left: 70px;
+    margin-right: 45px;
+}
 .edit-parking{
     margin-bottom: 100px;
     letter-spacing: 0.1em;

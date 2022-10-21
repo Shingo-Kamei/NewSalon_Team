@@ -46,6 +46,10 @@
   <div class="btn" >
     <button type="submit" class="btn btn-primary">確認</button>
   </div>
+
+  <input type="hidden" value="{{ $shop_id }}" name="shop_id">
+
+  
 </form>
   
 </body>
