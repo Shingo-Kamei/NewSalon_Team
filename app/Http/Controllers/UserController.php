@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Calendar\CalendarView;
 use App\Models\Appoint;
+use App\Models\Shop;
 
 class UserController extends Controller
 {
@@ -13,9 +14,10 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('appoints.create');
+        $shop_id = $request->shop_id;
+        return view('appoints.create', compact('shop_id'));
     }
 
     /**
@@ -27,17 +29,16 @@ class UserController extends Controller
     public function create(Request $request)
     {
 
- 
+        $date = $request->date;
         $name = $request->name;
         $email = $request->email;
         $tel = $request->tel;
-        $password = $request->password;
-
         $input_data = [
+            'shop_id' => $shop_id,
+            'date' => $date,
             'name' => $name,
             'email' => $email,
             'tel' => $tel,
-            'password' => $password,
         ];
 
         return view('appoints.confirms',compact('input_data'));
@@ -53,11 +54,12 @@ class UserController extends Controller
     {
 
         $appoint = new Appoint;
+        $appoint->shop_id = $request->shop_id;
+        $appoint->appoint_at = $request->date;
         $appoint->name = $request->name;
         $appoint->email = $request->email;
         $appoint->tel = $request->tel;
-        $appoint->password = $request->password;
-
+        $appoint->timestamps = false;
         $appoint->save();
         return view('appoints/complete');
     }
@@ -70,14 +72,9 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        // $calendar = new CalendarView(time());
 
-        // return view('appoints.calendar',[
-        //     "calendar" => $calendar
-        // ]); 
-
-            $appoint = Appoint::find($id);
-            return view('appoints/edit', compact('appoint'));
+        $shop = Shop::find($id);
+        return view('appoints/edit', compact('shop'));
 
     }
 
@@ -89,7 +86,18 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        $shop = Shop::find($id);
+
+
+        return view('appoints/edit/id')->with('shop', $shop);
+        // $shops = DB::table('shop')->get();
+        // return view('shop', compact('shops'));
+    }
+
+
+    public function store(Request $request)
+    {
+        return view('appoints/edit/id');
     }
 
     /**

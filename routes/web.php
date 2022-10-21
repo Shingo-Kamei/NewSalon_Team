@@ -16,9 +16,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/s', function () {
-    return view('appoint_confirms.index');
-});
+// Route::get('/s', function () {
+//     return view('appoint_confirms.index');
+// });
 
 // Auth::routes();
 
@@ -29,6 +29,7 @@ Route::get('/appoint', [App\Http\Controllers\UserController::class, 'index'])->n
 Route::post('/appoint', [App\Http\Controllers\UserController::class, 'create'])->name('create');
 Route::get('/home', [App\Http\Controllers\UserController::class, 'index'])->name('home');
 Route::post('/complete', [App\Http\Controllers\UserController::class, 'complete'])->name('complete');
+Route::get('/edit/{id}', [App\Http\Controllers\UserController::class, 'show'])->name('show');
 
 Route::get('/admin', [App\Http\Controllers\Admin\AppointController::class, 'index']);
 Route::get('/admin/shop', [App\Http\Controllers\Admin\ShopController::class, 'index']);

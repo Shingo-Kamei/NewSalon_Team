@@ -9,7 +9,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link href="{{ asset('css/apoint.css') }}" rel="stylesheet">
 
-  <title>予約画面</title>
+<title>予約画面</title>
 </head>
 
 
@@ -43,14 +43,13 @@
       <input class="appoint-tel" type="tel" name="tel" id="form-tel" required>
   </p>
   
-  <p class="password">
-      <label class="appointment-password" for="form-password">パスワード<span class="badge bg-danger">必須</span></label>
-      <input class="appoint-password" type="password" name="password" id="form-password" required>
-  </p>
-
   <div class="btn" >
     <button type="submit" class="btn btn-primary">確認</button>
   </div>
+
+  <input type="hidden" value="{{ $shop_id }}" name="shop_id">
+
+  
 </form>
   
 </body>

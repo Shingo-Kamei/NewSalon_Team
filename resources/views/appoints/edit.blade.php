@@ -24,49 +24,70 @@
     <div class="salon_data">
         <div class="salon_name">
             <label class="edit-name" for="edit-name">サロン名</label>
-            <span>Techis.Salon[テックアイエス.サロン]</span>
+            <span>{{ $shop->shop_name }}</span>
+        </div>
+        
+        <div class="salon_address">
+            <label class="edit-address" for="edit-address">住所</label>
+            <span>{{ $shop->address }}</span>
         </div>
 
-            <div class="salon_time">
-                <label class="edit-time" for="edit-time">営業時間</label>
-                <span>9:00~22:00</span>
-            </div>
+        <div class="salon_time">
+            <label class="edit-time" for="edit-time">営業時間</label>
+            <span>{{ $shop->open_hour }}</span>
+        </div>
 
-            <div class="salon_holiday">
-                <label class="edit-holiday" for="edit-holiday">定休日</label>
-                <span>第3月曜日</span>
-            </div>
+        <div class="salon_holiday">
+            <label class="edit-holiday" for="edit-holiday">定休日</label>
+            <span>{{ $shop->close_day }}</span>
+        </div>
 
-            <div class="salon_price">
-                <label class="edit-price" for="edit-price">価格</label>
-                <span>¥3,000~</span>
-            </div>
+        <div class="salon_tel">
+            <label class="edit-tel" for="edit-tel">電話番号</label>
+            <span>{{ $shop->tel }}</span>
+        </div>
 
-            <div class="salon_address">
-                <label class="edit-address" for="edit-address">住所</label>
-                <span>IT県テック市アイエス町555-5</span>
-            </div>
+        <div class="salon_seat">
+            <label class="edit-seat" for="edit-seat">座席数</label>
+            <span>{{ $shop->seat_num }}</span>
+        </div>
 
-            <div class="salon_tel">
-                <label class="edit-tel" for="edit-tel">電話番号</label>
-                <span>55555555555</span>
-            </div>
+        <div class="salon_crew">
+            <label class="edit-crew" for="edit-crew">スタッフ人数</label>
+            <span>{{ $shop->staff_num }}</span>
+        </div>
 
-            <div class="salon_seat">
-                <label class="edit-seat" for="edit-seat">座席数</label>
-                <span>10席</span>
-            </div>
+        <div class="salon_shopedit">
+            <label for="shop-edit" class="shop-edit">店舗詳細</label>
+            <span>{{ $shop->detail }}</span>
+        </div>
 
-            <div class="salon_crew">
-                <label class="edit-crew" for="edit-crew">スタッフ人数</label>
-                <span>5人</span>
-            </div>
+        <div class="salon_parking">
+            <label class="edit-parking" for="edit-parking">駐車場</label>
+            <span>{{ $shop->parking == 1 }}</span>
+            <span>{{ $shop->parking == 0 }}</span>
+        </div>
 
-            <div class="salon_parking">
-                <label class="edit-parking" for="edit-parking">駐車場</label>
-                <span>あり</span>
-            </div>
+        <div class="edit-btn" >
+            <a href="{{ url('/appoint?shop_id=1') }}">予約</a>
+        </div>
+
+        <div>
+            <input type="hidden" value="{{ $shop['shop_name'] }}" name="shop_name">
+            <input type="hidden" value="{{ $shop['address'] }}"name="address">
+            <input type="hidden" value="{{ $shop['open_hour'] }}"name="open_hour">
+            <input type="hidden" value="{{ $shop['close_day'] }}"name="close_day">
+            <input type="hidden" value="{{ $shop['tel'] }}"name="tel">
+            <input type="hidden" value="{{ $shop['seat_num'] }}"name="seat_num">
+            <input type="hidden" value="{{ $shop['staff_num'] }}"name="staff_num">
+            <input type="hidden" value="{{ $shop['detail'] }}"name="detail">
+            <input type="hidden" value="{{ $shop['parking'] }}"name="parking">
+        </div>
+
     </div>
+
+
+
 </div>
 
 
