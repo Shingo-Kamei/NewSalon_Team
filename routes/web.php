@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\SalonController;
 use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +13,19 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+ //一覧画面表示用
+Route::get('/', [SalonController::class,'index']);
+ // 本の登録画面の表示
+Route::get('/create', [SalonController::class, 'create'])->name('salon.create');
+ // 本の登録処理
+Route::post('/store', [SalonController::class, 'store'])->name('salon.store');
+ //予約画面の表示
+
+Route::get('/salons',[App\Http\Controllers\SalonController::class,'index'])->name('salons');
+    
+
+
+Route::get('/reserve',[SalonController::class, 'showPage']);
 
 Route::get('/', function () {
     return view('welcome');
@@ -38,3 +53,5 @@ Route::post('/admin/shop/create', [App\Http\Controllers\Admin\ShopController::cl
 Route::get('/admin/shop/edit/{id}', [App\Http\Controllers\Admin\ShopController::class, 'edit']);
 Route::put('/admin/shop/edit/{id}', [App\Http\Controllers\Admin\ShopController::class, 'update']);
 Route::delete('/admin/shop/{id}', [App\Http\Controllers\Admin\ShopController::class, 'delete']);
+
+Route::get('/reserve',[App\Http\Controllers\ReserveController::class,'index'])->name('reserve');

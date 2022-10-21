@@ -77,11 +77,8 @@
 *,
 *::before,
 *::after {
-  text-align: center;
-  
-  
+  text-align: left;
   box-sizing: border-box;
-
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -325,7 +322,7 @@ caption {
 
 th {
   text-align: inherit;
-  text-align: l;
+  text-align: -webkit-match-parent;
 }
 
 thead,
@@ -337,8 +334,9 @@ th {
   border-color: inherit;
   border-style: solid;
   border-width: 0;
-  padding-right: 70px;
-  padding-left: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  
 }
 
 label {
