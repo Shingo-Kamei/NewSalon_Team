@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\SalonController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,18 +14,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
  //一覧画面表示用
-Route::get('/', [SalonController::class,'index']);
+Route::get('/', [HomeController::class,'index']);
  // 本の登録画面の表示
-Route::get('/create', [SalonController::class, 'create'])->name('salon.create');
+Route::get('/create', [HomeController::class, 'create'])->name('home.create');
  // 本の登録処理
-Route::post('/store', [SalonController::class, 'store'])->name('salon.store');
+Route::post('/store', [HomeController::class, 'store'])->name('home.store');
  //予約画面の表示
 
-Route::get('/salons',[App\Http\Controllers\SalonController::class,'index'])->name('salons');
+Route::get('/homes',[App\Http\Controllers\HomeController::class,'index'])->name('homes');
     
 
 
-Route::get('/reserve',[SalonController::class, 'showPage']);
+Route::get('/reserve',[HomeController::class, 'showPage']);
 
 Route::get('/', function () {
     return view('welcome');

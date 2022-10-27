@@ -2,16 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Salon;
+use App\Models\Home;
 use Illuminate\Http\Request;
 
-class SalonController extends Controller
+class HomeController extends Controller
 {
     public function index()
     {
-      $salons = Salon::all();
-       return view('salons.index',[
-             'salons' => $salons,
+      $homes = Home::all();
+       return view('homes.index',[
+             'homes' => $homes,
     ]);
     }
 
@@ -24,5 +24,3 @@ class SalonController extends Controller
 
 
 }
-
-

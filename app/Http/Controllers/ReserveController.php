@@ -8,14 +8,14 @@ class ReserveController extends Controller
 {
     public function index()
     {
-      $salons = Salon::all();
-       return view('salons.index',[
-             'salons' => $salons,
+      $homes = Home::all();
+       return view('homes.index',[
+             'homes' => $homes,
     ]);
     }
 
      public function create(Request $request)
     {
-        return view('salon.create');
+        return view('home.create');
     }
 }
