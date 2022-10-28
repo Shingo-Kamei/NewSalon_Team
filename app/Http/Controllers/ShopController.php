@@ -30,7 +30,6 @@ class ShopController extends Controller
         $shop->shop_name = $request->shop_name;
         $shop->address = $request->shop_address;
         $shop->open_hour = $request->shop_open_hour;
-        $shop->
     }
 
     //

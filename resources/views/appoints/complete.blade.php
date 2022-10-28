@@ -14,9 +14,12 @@
 <body>
     
 <h3>予約を完了しました！</h3></div>
+<form action="">
+    <div class="complete-back">
+        <a href="{{ url('/home') }}">ホームに戻る</a>
+    </div>
+    
 
-<div class="complete-back">
-    <a href="{{ url('/home') }}">ホームに戻る</a>
-</div>
+</form>
 </body>
 </html>
