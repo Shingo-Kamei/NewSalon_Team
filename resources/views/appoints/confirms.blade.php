@@ -16,6 +16,7 @@
 
     <form class="row g-3" method="post" action="/complete">
         @csrf       
+
         <div class="confirm-date">
             <label>予約日:</label>
             <span>{{$input_data['date']}}</span>
@@ -38,6 +39,7 @@
         </div>
 
         <div>
+            <input type="hidden" value="{{ $input_data['shop_id'] }}" name="shop_id">
             <input type="hidden" value="{{ $input_data['date'] }}" name="date">
             <input type="hidden" value="{{ $input_data['name'] }}"name="name">
             <input type="hidden" value="{{ $input_data['email'] }}"name="email">

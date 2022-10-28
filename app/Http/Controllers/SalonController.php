@@ -9,7 +9,7 @@ class SalonController extends Controller
 {
     public function index()
     {
-      $salons = Salon::all();
+      $salons = array();
        return view('salons.index',[
              'salons' => $salons,
     ]);
