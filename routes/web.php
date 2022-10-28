@@ -13,19 +13,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
- //一覧画面表示用
-Route::get('/', [HomeController::class,'index']);
- // 本の登録画面の表示
-Route::get('/create', [HomeController::class, 'create'])->name('home.create');
- // 本の登録処理
-Route::post('/store', [HomeController::class, 'store'])->name('home.store');
+
  //予約画面の表示
-
-Route::get('/homes',[App\Http\Controllers\HomeController::class,'index'])->name('homes');
-    
-
-
-Route::get('/reserve',[HomeController::class, 'showPage']);
+Route::get('/salons',[App\Http\Controllers\SalonController::class,'index'])->name('salons');
 
 Route::get('/', function () {
     return view('welcome');
@@ -53,5 +43,3 @@ Route::post('/admin/shop/create', [App\Http\Controllers\Admin\ShopController::cl
 Route::get('/admin/shop/edit/{id}', [App\Http\Controllers\Admin\ShopController::class, 'edit']);
 Route::put('/admin/shop/edit/{id}', [App\Http\Controllers\Admin\ShopController::class, 'update']);
 Route::delete('/admin/shop/{id}', [App\Http\Controllers\Admin\ShopController::class, 'delete']);
-
-Route::get('/reserve',[App\Http\Controllers\ReserveController::class,'index'])->name('reserve');

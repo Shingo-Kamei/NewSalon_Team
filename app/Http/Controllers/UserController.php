@@ -28,7 +28,7 @@ class UserController extends Controller
      */
     public function create(Request $request)
     {
-
+        $shop_id = $request->shop_id;
         $date = $request->date;
         $name = $request->name;
         $email = $request->email;
@@ -62,6 +62,7 @@ class UserController extends Controller
         $appoint->timestamps = false;
         $appoint->save();
         return view('appoints/complete');
+
     }
 
     /**

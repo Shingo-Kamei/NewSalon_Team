@@ -9,9 +9,11 @@ class HomeController extends Controller
 {
     public function index()
     {
-      $homes = Home::all();
-       return view('homes.index',[
-             'homes' => $homes,
+
+      $salons = array();
+       return view('salons.index',[
+             'salons' => $salons,
+
     ]);
     }
 

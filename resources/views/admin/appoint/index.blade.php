@@ -23,7 +23,9 @@
                             @foreach ($appoints as $appoint)
                             <tr>
                                 <td>{{ $appoint->id }}</td>
-                                <td>{{ $shops[$appoint->shop_id] }}</td>
+                                <td>
+                                    <?php if (!empty($appoint->shop_id)) { ?>{{ $shops[$appoint->shop_id] }}<?php } ?>
+                                </td>
                                 <td>{{ $appoint->name }}</td>
                                 <td>{{ $appoint->email }}</td>
                                 <td>{{ $appoint->tel }}</td>
