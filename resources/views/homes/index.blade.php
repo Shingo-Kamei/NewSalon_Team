@@ -48,9 +48,9 @@ table tr:nth-child(odd) td {
     <th>根本理容店</th>
     <th>茨城県茨城市１</th>
     <th>オシャレ坊主</th>
-    <th> <a href =" http://127.0.0.1:8000/edit/1 "><input type="submit" value="詳細" class="btn btn-info"></a> </th>
+      
+    <th> <a href =" http://127.0.0.1:8000/admin/shop/"><input type="submit" value="詳細" class="btn btn-info"></a> </th>
    
-   </th>
 </tr>
 
 <!--店舗名-->
@@ -59,7 +59,7 @@ table tr:nth-child(odd) td {
     <th>サロン根本</th>
     <th>茨城県茨城市１－２－５</th>
     <th>パーマ得意</th>
-    <th> <a href =" http://127.0.0.1:8000/edit/1 "><input type="submit" value="詳細" class="btn btn-info"></a> </th>
+    <th> <a href =" http://127.0.0.1:8000/appoint/"><input type="submit" value="詳細" class="btn btn-info"></a> </th>
     
 </tr>
 
@@ -70,7 +70,7 @@ table tr:nth-child(odd) td {
    <th>サロン 和</th>
    <th>茨城県茨城市１－２－４</th>
    <th></th>
-   <th> <a href =" http://127.0.0.1:8000/edit/1 "><input type="submit" value="詳細" class="btn btn-info"></a> </th>
+   <th> <a href =" http://127.0.0.1:8000/appoint/create"><input type="submit" value="詳細" class="btn btn-info"></a> </th>
 </tr>
 
 <!--店舗名-->
@@ -79,7 +79,7 @@ table tr:nth-child(odd) td {
     <th>サロン増田</th>
     <th>茨城県茨城市１－２－６</th>
     <th>オシャレ坊主得意です。髭剃りはもちろん、エステも行っています。ぜひ、一度お越しください</th>
-    <th> <a href =" http://127.0.0.1:8000/edit/1 "><input type="submit" value="詳細" class="btn btn-info"></a> </th>
+    <th> <a href =" http://127.0.0.1:8000/appoints/edit/ "><input type="submit" value="詳細" class="btn btn-info"></a> </th>
 </tr>
 
 <!--店舗名-->

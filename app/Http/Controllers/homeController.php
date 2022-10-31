@@ -10,9 +10,9 @@ class HomeController extends Controller
     public function index()
     {
 
-      $salons = array();
-       return view('salons.index',[
-             'salons' => $salons,
+      $homes = array();
+       return view('homes.index',[
+             'homes' => $homes,
 
     ]);
     }
@@ -22,7 +22,10 @@ class HomeController extends Controller
         return view('shop.create');
     }
 
+    public function edit($id)
+    {
+        $home =Home::find($id);
+        return view('appoints.edit',compact('home'));
+    }
    
-
-
 }

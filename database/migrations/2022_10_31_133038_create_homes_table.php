@@ -14,8 +14,8 @@ class CreateHomesTable extends Migration
     public function up()
     {
         Schema::create('homes', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('user_id')->unsigned()->index();
+            $table->id();
+            $table->integer('shop_id');
             $table->string('name');
             $table->timestamps();
         });

@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
  //予約画面の表示
-Route::get('/salons',[App\Http\Controllers\SalonController::class,'index'])->name('salons');
-
+Route::get('/homes',[App\Http\Controllers\HomeController::class,'index'])->name('homes');
+Route::post('/homes',[App\Http\Controllers\HomeController::class,'index'])->name('homes');
 Route::get('/', function () {
     return view('welcome');
 });
