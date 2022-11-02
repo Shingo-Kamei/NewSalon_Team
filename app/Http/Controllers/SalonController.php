@@ -2,17 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Salon;
+use App\Models\Shop;
 use Illuminate\Http\Request;
 
 class SalonController extends Controller
 {
     public function index()
     {
-      $salons = array();
-       return view('salons.index',[
-             'salons' => $salons,
-    ]);
+        $shops = Shop::get();
+        return view('salons.index',['shops' => $shops]);
     }
 
      public function create(Request $request)
@@ -20,7 +18,7 @@ class SalonController extends Controller
         return view('shop.create');
     }
 
-   
+
 
 
 }
