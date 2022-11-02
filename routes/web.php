@@ -15,8 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
  //予約画面の表示
 Route::get('/salons',[App\Http\Controllers\SalonController::class,'index'])->name('salons');
-    
-
 
 
 Route::get('/', function () {
