@@ -1,6 +1,4 @@
 <?php
-
-use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,12 +12,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
- //予約画面の表示
-Route::get('/homes',[App\Http\Controllers\HomeController::class,'index'])->name('homes');
-Route::post('/homes',[App\Http\Controllers\HomeController::class,'index'])->name('homes');
-Route::get('/', function () {
-    return view('welcome');
-});
+ //TOPページの表示（URLはドキュメントルートを指定するべき）
+Route::get('/',[App\Http\Controllers\HomeController::class,'index'])->name('homes');
+Route::post('/',[App\Http\Controllers\HomeController::class,'index'])->name('homes');
 
 // Route::get('/s', function () {
 //     return view('appoint_confirms.index');
