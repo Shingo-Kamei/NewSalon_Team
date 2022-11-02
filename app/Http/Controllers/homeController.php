@@ -2,30 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Home;
+use App\Models\Shop;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index()
     {
-
-      $homes = array();
-       return view('homes.index',[
-             'homes' => $homes,
-
-    ]);
+        // shopテーブルから店舗のデータ一覧を取得しViewに渡す
+        $shops = Shop::all();
+        return view('homes.index',['shops' => $shops]);
     }
-
-     public function create(Request $request)
-    {
-        return view('shop.create');
-    }
-
-    public function edit($id)
-    {
-        $home =Home::find($id);
-        return view('appoints.edit',compact('home'));
-    }
-   
 }

@@ -85,7 +85,9 @@
                     </div>
                 </div>
             </div>
-            @yield('content')
+            <div class="admin_content">
+                @yield('content')
+            </div>
         </main>
     </div>
 </body>
