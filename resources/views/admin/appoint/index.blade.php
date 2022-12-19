@@ -24,7 +24,7 @@
                             <tr>
                                 <td>{{ $appoint->id }}</td>
                                 <td>
-                                    @if (!empty($appoint->shop_id)) && !empty($shops[$appoint->shop_id])
+                                    @if (!empty($appoint->shop_id) && !empty($shops[$appoint->shop_id]))
                                         {{ $shops[$appoint->shop_id] }}
                                     @endif
                                 </td>
