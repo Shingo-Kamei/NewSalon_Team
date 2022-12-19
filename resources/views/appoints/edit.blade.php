@@ -49,12 +49,12 @@
 
         <div class="salon_seat">
             <label class="edit-seat" for="edit-seat">座席数</label>
-            <span>{{ $shop->seat_num }}</span>
+            <span>{{ $shop->seat_num }}席</span>
         </div>
 
         <div class="salon_crew">
             <label class="edit-crew" for="edit-crew">スタッフ人数</label>
-            <span>{{ $shop->staff_num }}</span>
+            <span>{{ $shop->staff_num }}人</span>
         </div>
 
         <div class="salon_shopedit">
@@ -64,12 +64,18 @@
 
         <div class="salon_parking">
             <label class="edit-parking" for="edit-parking">駐車場</label>
-            <span>{{ $shop->parking == 1 }}</span>
-            <span>{{ $shop->parking == 0 }}</span>
+
+            @if (($shop->parking == 1))
+               あり
+            @else
+                なし
+            @endif
+            <!-- <span>{{ $shop->parking == 1 }}</span>
+            <span>{{ $shop->parking == 0 }}</span> -->
         </div>
 
         <div class="edit-btn" >
-            <a href="{{ url('/appoint?shop_id=1') }}">予約</a>
+            <a href="{{ url('/appoint?shop_id='.$shop['id']) }}">予約</a>
         </div>
 
         <div>
