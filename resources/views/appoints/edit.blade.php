@@ -64,8 +64,8 @@
 
         <div class="salon_parking">
             <label class="edit-parking" for="edit-parking">駐車場</label>
-            <span>{{ $shop->parking == 1 }}あり</span>
-            <span>{{ $shop->parking == 0 }}なし</span>
+            <span>{{ $shop->parking == 1 }}</span>
+            <span>{{ $shop->parking == 0 }}</span>
         </div>
 
         <div class="edit-btn" >
