@@ -70,8 +70,6 @@
             @else
                 なし
             @endif
-            <!-- <span>{{ $shop->parking == 1 }}</span>
-            <span>{{ $shop->parking == 0 }}</span> -->
         </div>
 
         <div class="edit-btn" >
