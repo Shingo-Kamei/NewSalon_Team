@@ -11,7 +11,7 @@
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th scope="col">ID</th>
+                                <!-- <th scope="col">ID</th> -->
                                 <th scope="col">店舗名</th>
                                 <th scope="col">登録日</th>
                                 <th scope="col"></th>
@@ -20,7 +20,7 @@
                         <tbody>
                             @foreach ($shops as $shop)
                             <tr>
-                                <td>{{ $shop->id }}</td>
+                                <!-- <td>{{ $shop->id }}</td> -->
                                 <td>{{ $shop->shop_name }}</td>
                                 <td>{{ $shop->created_at->format('Y-m-d H:i:s') }}</td>
                                 <td>
