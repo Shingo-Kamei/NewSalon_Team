@@ -26,6 +26,7 @@ class AppointController extends Controller
     {
         $appoints = Appoint::get();
         $shops = Shop::pluck("shop_name", "id")->toArray();
+        dd($shops);
         return view('admin/appoint/index')->with(['appoints'=> $appoints, 'shops' => $shops]);
     }
 }
