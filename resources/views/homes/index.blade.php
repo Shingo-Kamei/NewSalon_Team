@@ -22,7 +22,7 @@
     <table class="table table-striped">
         <thead>
             <tr>
-                <th style="width:12%">店番</th>
+                <!-- <th style="width:12%">店番</th> -->
                 <th style="width:16%">店名</th>
                 <th style="width:38%">住所</th>
                 <th></th>
@@ -34,7 +34,7 @@
             @foreach ($shops as $shop)
             <tr>
                 <!--店舗名-->
-                <td>{{ $shop->id }}</td>
+                <!-- <td>{{ $shop->id }}</td> -->
                 <td>{{ $shop->shop_name }}</td>
                 <td>{{ $shop->address }}</td>
                 <td> <a href="edit/{{$shop->id}}" class="btn btn-info">詳細</a></td>

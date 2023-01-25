@@ -11,7 +11,7 @@
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th scope="col">ID</th>
+                                <!-- <th scope="col">ID</th> -->
                                 <th scope="col">予約先店舗名</th>
                                 <th scope="col">名前</th>
                                 <th scope="col">メールアドレス</th>
@@ -22,7 +22,7 @@
                         <tbody>
                             @foreach ($appoints as $appoint)
                             <tr>
-                                <td>{{ $appoint->id }}</td>
+                                <!-- <td>{{ $appoint->id }}</td> -->
                                 <td>
                                     @if (!empty($appoint->shop_id))
                                         {{ $shops[$appoint->shop_id] }}
